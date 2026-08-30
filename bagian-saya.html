@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bagian Saya — Print Business Tracker</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="app">
+  <div id="shell-sidebar"></div>
+
+  <div class="main">
+    <div id="shell-topbar"></div>
+
+    <div class="content">
+      <div class="page-header">
+        <div>
+          <h1>Bagian Saya</h1>
+          <p>Pantau penghasilan bagian Anda dari keuntungan</p>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Hari Ini</div>
+          <div class="stat-value blue" id="statHariIni">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Minggu Ini</div>
+          <div class="stat-value blue" id="statMingguIni">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Bulan Ini</div>
+          <div class="stat-value blue" id="statBulanIni">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Tahun Ini</div>
+          <div class="stat-value blue" id="statTahunIni">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Total Bagian Saya</div>
+          <div class="stat-value blue" id="statTotal">Rp0</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">Target Bagian Saya</h3>
+        <div class="preview-grid" style="margin-bottom:16px;">
+          <div class="preview-item">
+            <span class="label">Target</span>
+            <span class="value" id="targetValue">Rp0</span>
+          </div>
+          <div class="preview-item">
+            <span class="label">Tercapai (Bulan Ini)</span>
+            <span class="value profit" id="tercapaiValue">Rp0</span>
+          </div>
+        </div>
+        <div class="progress-outer">
+          <div class="progress-inner" id="progressBar" style="width:0%;"></div>
+        </div>
+        <div class="progress-labels">
+          <span id="progressPercent">0%</span>
+          <span>Target Bulanan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/bagian-saya.js"></script>
+</body>
+</html>
