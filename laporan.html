@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laporan — Print Business Tracker</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="app">
+  <div id="shell-sidebar"></div>
+
+  <div class="main">
+    <div id="shell-topbar"></div>
+
+    <div class="content">
+      <div class="page-header">
+        <div>
+          <h1>Laporan</h1>
+          <p>Ringkasan keuangan bisnis print Anda</p>
+        </div>
+      </div>
+
+      <div class="filter-bar" id="periodFilter">
+        <button class="filter-btn" data-period="hari-ini">Hari Ini</button>
+        <button class="filter-btn" data-period="minggu-ini">Minggu Ini</button>
+        <button class="filter-btn" data-period="bulan-ini">Bulan Ini</button>
+        <button class="filter-btn" data-period="tahun-ini">Tahun Ini</button>
+        <button class="filter-btn active" data-period="semua">Semua</button>
+        <button class="filter-btn" data-period="custom">Custom Tanggal</button>
+      </div>
+
+      <div class="filter-date-row" id="customDateRow">
+        <div class="form-group" style="min-width:160px;">
+          <label for="customStart">Dari</label>
+          <input type="date" id="customStart" />
+        </div>
+        <div class="form-group" style="min-width:160px;">
+          <label for="customEnd">Sampai</label>
+          <input type="date" id="customEnd" />
+        </div>
+        <button class="btn btn-primary" id="btnApplyCustom" style="align-self:flex-end;">Terapkan</button>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-label">Total Transaksi</div>
+          <div class="stat-value" id="statTotalTransaksi">0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Omzet</div>
+          <div class="stat-value" id="statOmzet">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Modal</div>
+          <div class="stat-value red" id="statModal">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Keuntungan</div>
+          <div class="stat-value green" id="statKeuntungan">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Bagian Saya</div>
+          <div class="stat-value blue" id="statBagianSaya">Rp0</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Bagian Usaha</div>
+          <div class="stat-value" id="statBagianUsaha">Rp0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/laporan.js"></script>
+</body>
+</html>
