@@ -191,15 +191,7 @@ a {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  position: fixed;
-  top: 12px;
-  left: 16px;
-  z-index: 70;
   flex-shrink: 0;
-}
-
-.topbar {
-  padding-left: 66px;
 }
 
 .hamburger svg {
