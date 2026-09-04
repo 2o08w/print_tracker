@@ -172,7 +172,7 @@ a {
 .topbar {
   display: none;
   align-items: center;
-  justify-content: space-between;
+  gap: 14px;
   padding: 14px 16px;
   background: var(--sidebar);
   border-bottom: 1px solid var(--border);
